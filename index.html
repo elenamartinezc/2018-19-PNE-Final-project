@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Practice</title>
+  </head>
+  <body style="background-color: mistyrose;">
+    <FONT FACE="monospace" COLOR = "deeppink">
+        <h1>Final Practice by @elenamartinezc</h1></FONT>
+
+    <img src="https://cdn.tekcrispy.com/wp-content/uploads/2018/06/genes-inteligencia-640x360.jpg" width="400" height="200">
+    <h2><strong><FONT FACE="monospace"> Basic Level </FONT> </strong></h2>
+
+
+
+    <br><form action="/listSpecies" method="get">
+        <FONT FACE="monospace"> 1.The number of species you would like to see:</FONT>
+        <input type="text" size="1" name="limit">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+    <br><form action="/karyotype" method="get">
+        <FONT FACE="monospace"> 2.The name of the specie:</FONT>
+        <input type="text" name="specie">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+
+        <input type="submit" value="Go">
+
+    </form>
+    <br><form action="/chromosomeLength" method="get">
+        <FONT FACE="monospace"> 3.This calculates the length of the chromosome</FONT>
+
+            <br><FONT FACE="monospace"> -Insert the name of the specie:</FONT>
+        <input type="text" size="2" name="specie">
+                <br><FONT FACE="monospace"> -Insert the number of the chromosome: </FONT>
+        <input type="text" size="1" name="chromo">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+    <br><h2><strong><FONT FACE="monospace"> Medium Level </FONT> </strong></h2>
+    <form action="/geneSeq" method="get">
+        <FONT FACE="monospace"> 4.This returns the whole sequence of a human gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+    <br><form action="/geneInfo" method="get">
+        <FONT FACE="monospace"> 5.This returns information about a human gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+
+    <br><form action="/geneCalc" method="get">
+        <FONT FACE="monospace">6.This perfoms some calcultaions of a gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+
+    <br><form action="/geneList" method="get">
+        <FONT FACE="monospace"> 7. This returns the names located in the chromosome</FONT>
+        <br><FONT FACE="monospace"> -Insert a gene:</FONT>
+        <input type="text" size="8" name="chromo">
+        <br><FONT FACE="monospace"> -Insert a start:</FONT>
+        <input type="text" size="5" name="start">
+        <br><FONT FACE="monospace"> -Insert an end:</FONT>
+        <input type="text" size="5" name="end">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+
+    <br><h2><strong><FONT FACE="monospace"> Advanced Level </FONT> </strong></h2>
+    <h7><FONT FACE="monospace">  Allows you to access to the info by json. </FONT></h7>
+
+
+
+
+    <br><br><em><FONT FACE="monospace">If you want more info: <a href="https://github.com/elenamartinezc">Link to my GitHub account</a></FONT></em>
+
+  </body>
+</html>

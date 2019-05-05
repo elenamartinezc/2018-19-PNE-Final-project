@@ -1,0 +1,283 @@
+Basic Level
+
+Endpoint: “/listSpecies”:
+
+Tested with limit 12:  <html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink">
+<h1>The list of species is:</h1></FONT>
+<ol><li>Golden snub-nosed monkey</li><li>Little spotted kiwi</li><li>Emu</li><li>Microbat</li><li>Swamp eel</li><li>Western mosquitofish</li><li>Climbing perch</li><li>Donkey</li><li>Cod</li><li>Turbot</li><li>Kangaroo rat</li><li>Bolivian squirrel monkey</li>
+
+Arguments:
+127.0.0.1:8000/listSpecies?limit=12
+
+Response from the server:
+The limit is: 12
+
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:18:01] "GET /listSpecies?limit=12 HTTP/1.1" 200 -
+127.0.0.1 - - [05/May/2019 10:18:01] "GET /favicon.ico HTTP/1.1" 200 -
+
+
+Tested without limit:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink">
+<h1>The list of species is:</h1></FONT>
+<ol><li>Asian bonytongue</li><li>Marmoset</li><li>Goat</li><li>Ma's night monkey</li><li>Leopard</li><li>Mouse PWK/PhJ</li><li>Flycatcher</li><li>Naked mole-rat male</li><li>C.intestinalis</li><li>Chilean tinamou</li><li>Golden Hamster</li><li>Tongue sole</li><li>Blue-crowned manakin</li><li>Gibbon</li><li>Mouse WSB/EiJ</li><li>Japanese medaka HdrR</li><li>Zebra mbuna</li><li>Black snub-nosed monkey</li><li>Angola colobus</li><li>Paramormyrops kingsleyae</li><li>Polar bear</li><li>Budgerigar</li><li>Xenopus</li><li>Helmeted guineafowl</li><li>Channel catfish</li><li>Bushbaby</li><li>Dog</li><li>Ferret</li><li>Mouse LP/J</li><li>Guppy</li><li>Mummichog</li><li>Mouse DBA/2J</li><li>Western mosquitofish</li><li>Shrew</li><li>Hyrax</li><li>Squirrel</li><li>Wild yak</li><li>Platypus</li><li>Capuchin</li><li>Guinea Pig</li><li>Elephant</li><li>Tiger</li><li>Anole lizard</li><li>Midas cichlid</li><li>Crab-eating macaque</li><li>Emu</li><li>Chinese hamster PICR</li><li>White-throated sparrow</li><li>Cat</li><li>Shrew mouse</li><li>Burton's mouthbrooder</li><li>Tarsier</li><li>Japanese medaka HNI</li><li>Northern pike</li><li>American black bear</li><li>Koala</li><li>Ryukyu mouse</li><li>Greater amberjack</li><li>Climbing perch</li><li>Swamp eel</li><li>Monterrey platyfish</li><li>Naked mole-rat female</li><li>Sheep</li><li>Lesser Egyptian jerboa</li><li>Blue tit</li><li>Lesser hedgehog tenrec</li><li>Armadillo</li><li>Makobe Island cichlid</li><li>Chinese softshell turtle</li><li>Spoon-billed sandpiper</li><li>Alpine marmot</li><li>Common canary</li><li>Sheepshead minnow</li><li>Macaque</li><li>Clown anemonefish</li><li>Pig</li><li>Arctic ground squirrel</li><li>Spotted gar</li><li>Damara mole rat</li><li>Mouse A/J</li><li>Chinese hamster CHOK1GS</li><li>C.savignyi</li><li>Shortfin molly</li><li>Rat</li><li>Mouse NOD/ShiLtJ</li><li>Lamprey</li><li>Mongolian gerbil</li><li>Gorilla</li><li>Steppe mouse</li><li>Bolivian squirrel monkey</li><li>Mouse NZO/HlLtJ</li><li>Horse</li><li>Painted turtle</li><li>Upper Galilee mountains blind mole rat</li><li>Wallaby</li><li>Tilapia</li><li>Caenorhabditis elegans</li><li>Northern American deer mouse</li><li>Opossum</li><li>American bison</li><li>Zebrafish</li><li>Japanese medaka HSOK</li><li>Gelada</li><li>American mink</li><li>Olive baboon</li><li>Mouse CBA/J</li><li>Golden snub-nosed monkey</li><li>Drosophila melanogaster</li><li>Red fox</li><li>Mouse 129S1/SvImJ</li><li>Mouse CAST/EiJ</li><li>Eastern happy</li><li>Australian saltwater crocodile</li><li>Degu</li><li>Pink-footed goose</li><li>Brazilian guinea pig</li><li>Mouse C3H/HeJ</li><li>Great Tit</li><li>Yellowtail amberjack</li><li>Golden-collared manakin</li><li>Bicolor damselfish</li><li>Ugandan red Colobus</li><li>Red-bellied piranha</li><li>Duck</li><li>Orangutan</li><li>Ruff</li><li>Platyfish</li><li>Greater bamboo lemur</li><li>Donkey</li><li>Turbot</li><li>Kangaroo rat</li><li>Central bearded dragon</li><li>Fugu</li><li>Mainland tiger snake</li><li>Bengalese finch</li><li>Mouse FVB/NJ</li><li>Tree Shrew</li><li>Mouse C57BL/6NJ</li><li>Indian medaka</li><li>Abingdon island giant tortoise</li><li>Chimpanzee</li><li>Sloth</li><li>Turkey</li><li>Mouse</li><li>Little spotted kiwi</li><li>Rabbit</li><li>Pig-tailed macaque</li><li>Amazon molly</li><li>Mouse Lemur</li><li>Long-tailed chinchilla</li><li>Tetraodon</li><li>Coquerel's sifaka</li><li>Argentine black and white tegu</li><li>Mexican tetra</li><li>Drill</li><li>Japanese quail</li><li>Mouse AKR/J</li><li>Zig-zag eel</li><li>Megabat</li><li>Human</li><li>Agassiz's desert tortoise</li><li>Bonobo</li><li>Saccharomyces cerevisiae</li><li>Algerian mouse</li><li>Dolphin</li><li>Cod</li><li>Dingo</li><li>Great spotted kiwi</li><li>Alpaca</li><li>Orange clownfish</li><li>Sailfin molly</li><li>Chicken</li><li>Tasmanian devil</li><li>Ocean sunfish</li><li>Hagfish</li><li>Zebra Finch</li><li>Periophthalmus magnuspinnatus</li><li>Tuatara</li><li>Daurian ground squirrel</li><li>Okarito brown kiwi</li><li>Hedgehog</li><li>Microbat</li><li>Spiny chromis</li><li>Chinese hamster CriGri</li><li>Lyretail cichlid</li><li>Stickleback</li><li>American beaver</li><li>Prairie vole</li><li>Sooty mangabey</li><li>Panda</li><li>Dark-eyed junco</li><li>Cow</li><li>Coelacanth</li><li>Mouse BALB/cJ</li><li>Tiger tail seahorse</li><li>Pika</li><li>Vervet-AGM</li><li>Ballan wrasse</li><li>Mangrove rivulus</li>
+
+Response from the server:
+The limit is: 0
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:21:33] "GET /listSpecies?limit= HTTP/1.1" 200 -
+127.0.0.1 - - [05/May/2019 10:21:33] "GET /favicon.ico HTTP/1.1" 200 -
+
+Tested without ?:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink">
+<h1>The list of species is:</h1></FONT>
+<ol><li>Mouse</li><li>Human</li><li>Guinea Pig</li><li>Mouse CBA/J</li><li>Midas cichlid</li><li>Anole lizard</li><li>Capuchin</li><li>Ballan wrasse</li><li>Leopard</li><li>Fugu</li><li>Black snub-nosed monkey</li><li>Zig-zag eel</li><li>Blue-crowned manakin</li><li>Damara mole rat</li><li>Opossum</li><li>Donkey</li><li>Platyfish</li><li>Little spotted kiwi</li><li>Ruff</li><li>Stickleback</li><li>Chinese hamster PICR</li><li>Steppe mouse</li><li>Indian medaka</li><li>Upper Galilee mountains blind mole rat</li><li>Abingdon island giant tortoise</li><li>Spiny chromis</li><li>Asian bonytongue</li><li>Tasmanian devil</li><li>Chicken</li><li>Coelacanth</li><li>Helmeted guineafowl</li><li>Mouse A/J</li><li>Sailfin molly</li><li>Koala</li><li>Mouse FVB/NJ</li><li>Chinese hamster CHOK1GS</li><li>Mouse LP/J</li><li>Naked mole-rat female</li><li>Spoon-billed sandpiper</li><li>Duck</li><li>Bolivian squirrel monkey</li><li>Bengalese finch</li><li>Marmoset</li><li>Sheep</li><li>Olive baboon</li><li>Crab-eating macaque</li><li>Mainland tiger snake</li><li>Goat</li><li>Mummichog</li><li>American black bear</li><li>Mouse NZO/HlLtJ</li><li>Wallaby</li><li>Dolphin</li><li>Western mosquitofish</li><li>Cat</li><li>Bonobo</li><li>Gibbon</li><li>Vervet-AGM</li><li>Cow</li><li>Clown anemonefish</li><li>Shrew mouse</li><li>Japanese quail</li><li>Tarsier</li><li>Great spotted kiwi</li><li>Pig-tailed macaque</li><li>Tuatara</li><li>Pink-footed goose</li><li>Climbing perch</li><li>Spotted gar</li><li>Golden snub-nosed monkey</li><li>Daurian ground squirrel</li><li>Amazon molly</li><li>Turbot</li><li>Algerian mouse</li><li>Lamprey</li><li>Xenopus</li><li>Agassiz's desert tortoise</li><li>American bison</li><li>Mouse 129S1/SvImJ</li><li>Channel catfish</li><li>Degu</li><li>Angola colobus</li><li>Golden-collared manakin</li><li>Eastern happy</li><li>Greater bamboo lemur</li><li>Mouse WSB/EiJ</li><li>Armadillo</li><li>Mangrove rivulus</li><li>Mouse DBA/2J</li><li>Arctic ground squirrel</li><li>Gorilla</li><li>Mouse Lemur</li><li>Drill</li><li>Central bearded dragon</li><li>American mink</li><li>Great Tit</li><li>Macaque</li><li>Platypus</li><li>Japanese medaka HNI</li><li>Hagfish</li><li>Dingo</li><li>Zebrafish</li><li>Mouse NOD/ShiLtJ</li><li>Bicolor damselfish</li><li>Long-tailed chinchilla</li><li>Mouse C57BL/6NJ</li><li>Mexican tetra</li><li>Squirrel</li><li>Alpaca</li><li>Australian saltwater crocodile</li><li>White-throated sparrow</li><li>Orange clownfish</li><li>Tiger</li><li>Turkey</li><li>Ugandan red Colobus</li><li>Alpine marmot</li><li>Common canary</li><li>Okarito brown kiwi</li><li>Argentine black and white tegu</li><li>Sloth</li><li>Ryukyu mouse</li><li>Shrew</li><li>Zebra Finch</li><li>Gelada</li><li>Tiger tail seahorse</li><li>Brazilian guinea pig</li><li>Periophthalmus magnuspinnatus</li><li>Ma's night monkey</li><li>Microbat</li><li>Pig</li><li>Coquerel's sifaka</li><li>Drosophila melanogaster</li><li>Makobe Island cichlid</li><li>Lesser hedgehog tenrec</li><li>Dark-eyed junco</li><li>Red fox</li><li>Chimpanzee</li><li>Chinese hamster CriGri</li><li>Greater amberjack</li><li>Hedgehog</li><li>Elephant</li><li>Lyretail cichlid</li><li>Chinese softshell turtle</li><li>Prairie vole</li><li>Ocean sunfish</li><li>Polar bear</li><li>Emu</li><li>Rabbit</li><li>Monterrey platyfish</li><li>Sheepshead minnow</li><li>C.intestinalis</li><li>Red-bellied piranha</li><li>Northern pike</li><li>Pika</li><li>Ferret</li><li>C.savignyi</li><li>Mongolian gerbil</li><li>Paramormyrops kingsleyae</li><li>Lesser Egyptian jerboa</li><li>Kangaroo rat</li><li>Sooty mangabey</li><li>Tilapia</li><li>Orangutan</li><li>Painted turtle</li><li>Zebra mbuna</li><li>Horse</li><li>Golden Hamster</li><li>Megabat</li><li>Yellowtail amberjack</li><li>Blue tit</li><li>Mouse PWK/PhJ</li><li>Cod</li><li>Burton's mouthbrooder</li><li>Saccharomyces cerevisiae</li><li>Tongue sole</li><li>Dog</li><li>Swamp eel</li><li>Panda</li><li>American beaver</li><li>Budgerigar</li><li>Northern American deer mouse</li><li>Flycatcher</li><li>Wild yak</li><li>Mouse BALB/cJ</li><li>Mouse CAST/EiJ</li><li>Rat</li><li>Bushbaby</li><li>Naked mole-rat male</li><li>Caenorhabditis elegans</li><li>Guppy</li><li>Japanese medaka HSOK</li><li>Tetraodon</li><li>Chilean tinamou</li><li>Tree Shrew</li><li>Mouse C3H/HeJ</li><li>Shortfin molly</li><li>Japanese medaka HdrR</li><li>Hyrax</li><li>Mouse AKR/J</li>
+
+Response from the server:
+The limit is: 0
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:22:57] "GET /listSpecies HTTP/1.1" 200 -
+127.0.0.1 - - [05/May/2019 10:22:58] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+127.0.0.1:8000/listSpecies
+
+Endpoint: “/karyotype”:
+
+Tested with argument ‘mouse’:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink">
+<h1>The karyotype is:</h1></FONT>
+<ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>X</li><li>Y</li><li>MT</li></ul>
+</body>
+</html>
+
+Response from the server:
+The specie is: mouse
+127.0.0.1 - - [05/May/2019 10:26:04] "GET /karyotype?specie=mouse HTTP/1.1" 200 -
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:26:04] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+127.0.0.1:8000/karyotype?specie=mouse
+
+
+Endpoint: “/chromosomeLength”:
+
+Tested with arguments ‘mouse’ and ‘18’:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink"><h1>The length of the chromosome is:</h1></FONT>
+<ul><li>90702639</li></ul>
+</body>
+</html>
+
+Response from the server:
+The chromo is: 18
+The specie is: mouse
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:26:57] "GET /chromosomeLength?specie=mouse&chromo=18 HTTP/1.1" 200 -
+127.0.0.1 - - [05/May/2019 10:26:57] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+127.0.0.1:8000/chromosomeLength?specie=mouse&chromo=18
+
+Endpoint: “/”:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Practice</title>
+  </head>
+  <body style="background-color: mistyrose;">
+    <FONT FACE="monospace" COLOR = "deeppink">
+        <h1>Final Practice by @elenamartinezc</h1></FONT>
+
+    <img src="https://cdn.tekcrispy.com/wp-content/uploads/2018/06/genes-inteligencia-640x360.jpg" width="400" height="200">
+    <h2><strong><FONT FACE="monospace"> Basic Level </FONT> </strong></h2>
+
+
+
+    <br><form action="/listSpecies" method="get">
+        <FONT FACE="monospace"> 1.The number of species you would like to see:</FONT>
+        <input type="text" size="1" name="limit">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+    <br><form action="/karyotype" method="get">
+        <FONT FACE="monospace"> 2.The name of the specie:</FONT>
+        <input type="text" name="specie">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+
+        <input type="submit" value="Go">
+
+    </form>
+    <br><form action="/chromosomeLength" method="get">
+        <FONT FACE="monospace"> 3.This calculates the length of the chromosome</FONT>
+
+            <br><FONT FACE="monospace"> -Insert the name of the specie:</FONT>
+        <input type="text" size="2" name="specie">
+                <br><FONT FACE="monospace"> -Insert the number of the chromosome: </FONT>
+        <input type="text" size="1" name="chromo">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+    <br><h2><strong><FONT FACE="monospace"> Medium Level </FONT> </strong></h2>
+    <form action="/geneSeq" method="get">
+        <FONT FACE="monospace"> 4.This returns the whole sequence of a human gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+    <br><form action="/geneInfo" method="get">
+        <FONT FACE="monospace"> 5.This returns information about a human gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+
+    <br><form action="/geneCalc" method="get">
+        <FONT FACE="monospace">6.This perfoms some calcultaions of a gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+
+    <br><form action="/geneList" method="get">
+        <FONT FACE="monospace"> 7. This returns the names located in the chromosome</FONT>
+        <br><FONT FACE="monospace"> -Insert a gene:</FONT>
+        <input type="text" size="8" name="gene">
+        <br><FONT FACE="monospace"> -Insert a start:</FONT>
+        <input type="text" size="5" name="start">
+        <br><FONT FACE="monospace"> -Insert an end:</FONT>
+        <input type="text" size="5" name="end">
+        <br><h7><FONT FACE="monospace">  Json: </FONT></h7>
+        <input type="checkbox" name="json" value ="1">
+        <input type="submit" value="Go">
+
+    </form>
+
+    <br><h2><strong><FONT FACE="monospace"> Advanced Level </FONT> </strong></h2>
+    <h7><FONT FACE="monospace">  Allows you to access to the info by json. </FONT></h7>
+
+
+
+
+    <br><br><em><FONT FACE="monospace">If you want more info: <a href="https://github.com/elenamartinezc">Link to my GitHub account</a></FONT></em>
+
+  </body>
+</html>
+
+Arguments:
+127.0.0.1:8000/
+
+
+Medium Level
+
+Endpoint: “/geneSeq”:
+
+Tested with argument ‘FRAT1’:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink"><h1>The sequence of the human chromosome:</h1></FONT>
+<ul><li>ATTCCGGCTCCCGCGGCTGCAGGCGCGCGGCTAGAGTGCCTGGCGGGCTCCGGCTTCCGCGTCCGCCCCGGCCCCGGTCCAGACTTAGTCTTCAGCTCCGCGCCCGCTCCGCCGCGGCCCACCGCGCCCGCCGGCAGCCGAGCCCCCAGCGACGCCCGCACAGCTCCGGGTGCCCAGACAGGGGGCCATGCCGTGCCGGAGGGAGGAGGAAGAGGAAGCCGGCGAGGAGGCGGAGGGGGAGGAAGAGGAGGAGGACAGCTTCCTCCTACTGCAGCAGTCAGTGGCGCTGGGCAGCTCGGGCGAGGTGGACCGGCTGGTGGCCCAGATCGGCGAGACGCTGCAGCTGGACGCGGCGCAGCACAGCCCGGCCTCGCCGTGCGGGCCCCCGGGGGCGCCGCTGCGGGCCCCGGGGCCCCTGGCTGCGGCGGTGCCGGCGGACAAGGCCAGGTCCCCGGCGGTGCCGCTGCTGCTGCCGCCCGCGTTGGCGGAGACTGTGGGCCCGGCGCCCCCTGGGGTCCTGCGCTGCGCCCTGGGGGACCGCGGCCGCGTGCGGGGCCGCGCTGCGCCCTACTGCGTGGCCGAGCTCGCCACAGGCCCCAGCGCGCTGTCCCCACTGCCCCCTCAGGCCGACCTTGATGGGCCTCCGGGAGCTGGCAAGCAGGGCATCCCGCAGCCGCTGTCGGGTCCGTGCCGGCGAGGATGGCTCCGGGGCGCCGCCGCCTCCCGCCGCCTGCAGCAGCGACGCGGGTCCCAACCAGAAACCCGCACAGGCGACGACGACCCGCACCGGCTTCTGCAGCAGCTAGTGCTCTCTGGAAACCTCATCAAGGAGGCCGTGCGAAGGCTTCATTCGCGACGGCTGCAGTTACGTGCAAAGCTTCCCCAACGCCCGCTCCTGGGACCTCTGTCGGCCCCGGTGCATGAACCCCCTTCGCCTCGCAGCCCTCGCGCGGCCTGCAGTGACCCTGGCGCCTCCGGGAGGGCGCAGCTCAGAACTGGCGACGGCGTTCTTGTGCCTGGCAGCTAACACGCCCGGGGTGGCCACAGCGCCAGCCTCAGACTGGAGGGCAAGGGGTTCCCTTGAGGGCTGCAGTTCTACTCAGGCTGGTGGAGAACTCTGGCTTTTGGAAGCGAGAGTAAAAAGCTAATGACGAGGAACCGAAAAATCGCGAGTGTTTCGCGGGTAACTGGGGTTGAGGGCCAAAATATTTGGAATGAAGGACTTTGGCCCTATTTAAGGCAGATTTTACAGAGCGCACCTCAAACGTACAAGTCAGTAGGACTCCTTATTTGGCGTGACCCGACCTGGCCGCGGAGCCTGCATTTCCTCGCAGCCTCTCAGTGCCCTCCAGCCCCGCGACCATGTGGCCACAATCCACGCTTCTCCGGATCGCGGTGCGCCGGAACCACGGAGGATGATGCCAGTTACTTGCTTTACCTTTTCAGGGCTGGCTCCTGATCCACTTTGGGGGAGGAGAACATGAGTAGATAATTTCAGGGTGCAGCCCAATCTGCCAGACTTAAAAAAACCATCTTGTGTCTTTGGAGGTGCTGCTTAATACCAAACATGCGGTGCCATGAAGGGACCCTTTGGGGGTTGAATAGGAGTTAACCCCTGCGCTCTCTTTGCAACTGTCTCTCTTCTCAGAGTGGTGGGGGAAGGCTGTACGACACGGGTGGGGAAAGGAGGTGGGGGCGGGGAGTATTGAATGGTGGTGGAAGGGTAGAGAGGCGCGGAGTGAACCCCACGCCCTGTCTAAAGTGTATTTTCAGAGCCGGCCCGCCTCTCCTCGGTTCAAGGTCACTGTTTCCTGGGCACGCACTGGGTTGCGGGACAGAGTAGCCAGGTTCTGCCGGTGCTCGGAGAAGAGCGCAGTGTTTTGCAAGTGCTGGAGTCTCCTGAGGACACGCGCGTCGCCGCCACCGCGGGTGTGGGAAAGCGCGGACGTGCTGGGCGGCTGTGCTTCGGTAGGCGACCACCGCCCCTGGCCGCGCTCCGGGCTTTCACGGAAACTCCCGAGACCGGGCCCTGGGTTCCTCCTCTCCTACTCGGCTCTGCAGTCCTACTCAAGCGGGTGGCTCTGGGATCCTGGGGGCCTGGGTTGGGGGCTAGGGAGACGCCATGTGATGGACACTCCAGGGACACACAGCCTAGCACAGCAGCTTATAATGGGCTCTCCGGGGCCATTTGCAATAACAGCTGCAATTCCCTGGATAGACGAGTTGATTTCCTCCCTCTGCCCCTCCCCCAGCCATGCCAGCTGGCCTTTGTAAGTGCAGGAAACCGAGTAGAAAATGTGACCCTCCAAATGGAGAAGCTGCAGGCTTTGCCATTGTGAACCATGGTGAAGTGCTTGGAACATACTGTTCACTCACTCTAAAGGCGCTGAGACTGTGCTGTTGTTCTCGTTTTTATAGTCAATGGCTTGTTCATCATCCAGATGTGGCTACTGACATATCTACACTTCGCACCGGAGTGTCTGGAATTGTGGCTATCCTGATTATAGGATTTTAACTTAACTGAAATGCCTGCTTTGAATAAATGTGTTGGGTTTTTTGTTTGGTTTTATTTTATACTTGCCATCAGTGAAAAAGATGTACAGAACACATTTCTCTGATCTCCATAAACATGAAAACACTTGAAATCTC</li>
+
+Response from the server:
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:30:49] "GET /geneSeq?gene=FRAT1 HTTP/1.1" 200 -
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:30:50] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+127.0.0.1:8000/geneSeq?gene=FRAT1
+
+Endpoint: “/geneInfo”:
+
+Tested with argument ‘FRAT1’:
+
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink"><h1>The parameters of the gene introduced:</h1></FONT>
+<ul><li><h4> ID: </h4>ENSG00000165879</li><li><h4> Start: </h4>97319267</li><li><h4> End: </h4>97321915</li><li><h4> Length: </h4>2648</li><li><h4> Chromosome: </h4>GRCh38</li>
+
+Response from the server:
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:32:09] "GET /geneInfo?gene=FRAT1 HTTP/1.1" 200 -
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:32:09] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+127.0.0.1:8000/geneInfo?gene=FRAT1
+
+
+Endpoint: “/geneCalc”:
+
+Tested with argument ‘FRAT1’:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink"><h1>The calculations of the gene introduced:</h1></FONT>
+<ul><li><h4> Length: </h4>2649</li><li><h4> Percentage of As: </h4>18.0%</li><li><h4> Percentage of Cs: </h4>30.2%</li><li><h4> Percentage of Gs: </h4>32.0%</li><li><h4> Percentage of Ts: </h4>19.7%</li>
+
+Response from the server:
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:33:40] "GET /geneCalc?gene=FRAT1 HTTP/1.1" 200 -
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 10:33:40] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+http://127.0.0.1:8000/geneCalc?gene=FRAT1
+
+Endpoint: "/geneList":
+
+Tested with chromo=1, start=0 and end=30000:
+<html>
+<body style="background-color: mistyrose;">
+<FONT FACE="monospace" COLOR = "deeppink"><h1>The calculations of the gene introduced:</h1></FONT>
+<ul><li>ENSG00000223972</li><li>ENSG00000227232</li><li>ENSG00000278267</li><li>ENSG00000243485</li>
+
+Response from the server:
+The start is: 0
+The chromo is: 1
+The end is: 30000
+Response received: 200 OK
+127.0.0.1 - - [05/May/2019 12:44:09] "GET /geneList?chromo=1&start=0&end=30000 HTTP/1.1" 200 -
+127.0.0.1 - - [05/May/2019 12:44:09] "GET /favicon.ico HTTP/1.1" 200 -
+
+Arguments:
+http://127.0.0.1:8000/geneList?gene=1&start=0&end=30000
+
+
+Advanced Level
+/listSpecies:
+[{'taxon_id': '9606', 'assembly': 'GRCh38', 'name': 'homo_sapiens', 'common_name': 'human', 'display_name': 'Human', 'division': 'EnsemblVertebrates', 'groups': ['rnaseq', 'variation', 'otherfeatures', 'funcgen', 'core', 'cdna'], 'aliases': ['9606', 'enshs', 'hsap', 'homsap', 'hsapiens', 'human', 'homo sapiens', 'h_sapiens', 'homo'], 'release': 96, 'accession': 'GCA_000001405.27', 'strain': None, 'strain_collection': None}, {'common_name': 'domestic guinea pig', 'name': 'cavia_porcellus', 'assembly': 'Cavpor3.0', 'taxon_id': '10141', 'accession': 'GCA_000151735.1', 'strain_collection': None, 'strain': None, 'aliases': ['guinea_pig', 'domestic guinea pig', 'cporcellus', '10141', 'cpor', 'cavpor', 'guinea pig', 'cavia porcellus'], 'groups': ['core', 'rnaseq', 'otherfeatures', 'funcgen'], 'division': 'EnsemblVertebrates', 'display_name': 'Guinea Pig', 'release': 96}, {'accession': 'GCA_001624475.1', 'strain': 'CBA/J', 'strain_collection': 'mouse', 'display_name': 'Mouse CBA/J', 'groups': ['funcgen', 'core'], 'aliases': [], 'division': 'EnsemblVertebrates', 'release': 96, 'assembly': 'CBA_J_v1', 'common_name': 'house mouse', 'name': 'mus_musculus_cbaj', 'taxon_id': '10090'}, {'display_name': 'Midas cichlid', 'aliases': [], 'groups': ['core'], 'division': 'EnsemblVertebrates', 'release': 96, 'accession': 'GCA_000751415.1', 'strain': None, 'strain_collection': None, 'taxon_id': '61819', 'assembly': 'Midas_v5', 'name': 'amphilophus_citrinellus', 'common_name': 'Midas cichlid'}, {'taxon_id': '28377', 'assembly': 'AnoCar2.0', 'name': 'anolis_carolinensis', 'common_name': 'green anole', 'release': 96, 'display_name': 'Anole lizard', 'aliases': ['anolis carolinensis', 'acarolinensis', 'anolis', '28377', 'green anole', 'anolis_lizard', 'acar', 'anoliscarolinensis', 'anole lizard', 'green anole lizard', 'anocar'], 'division': 'EnsemblVertebrates', 'groups': ['otherfeatures', 'rnaseq', 'core'], 'strain': None, 'strain_collection': None, 'accession': 'GCA_000090745.1'}, {'display_name': 'Capuchin', 'division': 'EnsemblVertebrates', 'aliases': [], 'groups': ['core', 'funcgen', 'otherfeatures', 'rnaseq'], 'release': 96, 'accession': 'GCA_001604975.1', 'strain': None, 'strain_collection': None, 'taxon_id': '1737458', 'assembly': 'Cebus_imitator-1.0', 'common_name': 'White-headed capuchin', 'name': 'cebus_capucinus'}, {'name': 'labrus_bergylta', 'common_name': 'ballan wrasse', 'assembly': 'BallGen_V1', 'taxon_id': '56723', 'accession': 'GCA_900080235.1', 'strain_collection': None, 'strain': None, 'division': 'EnsemblVertebrates', 'groups': ['core', 'rnaseq', 'otherfeatures'], 'aliases': [], 'display_name': 'Ballan wrasse', 'release': 96}, {'taxon_id': '9691', 'assembly': 'PanPar1.0', 'name': 'panthera_pardus', 'common_name': 'leopard', 'display_name': 'Leopard', 'aliases': ['leopard'], 'groups': ['core', 'otherfeatures'], 'division': 'EnsemblVertebrates', 'release': 96, 'accession': 'GCA_001857705.1', 'strain': None, 'strain_collection': None}, {'assembly': 'FUGU5', 'common_name': 'torafugu', 'name': 'takifugu_rubripes', 'taxon_id': '31033', 'strain': None, 'strain_collection': None, 'accession': 'GCA_000180615.2', 'release': 96, 'display_name': 'Fugu', 'aliases': ['takifugu rubripes', 't_rubripes', 'fugu', '31033', 'trubripes', 'trub', 'takifugu', 'takrub', 'torafugu'], 'groups': ['rnaseq', 'otherfeatures', 'core'], 'division': 'EnsemblVertebrates'}]
+/karyotype
+['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', 'X', 'Y', 'MT']
+/chromosomeLength
+90702639
+/geneSeq
+ATTCCGGCTCCCGCGGCTGCAGGCGCGCGGCTAGAGTGCCTGGCGGGCTCCGGCTTCCGCGTCCGCCCCGGCCCCGGTCCAGACTTAGTCTTCAGCTCCGCGCCCGCTCCGCCGCGGCCCACCGCGCCCGCCGGCAGCCGAGCCCCCAGCGACGCCCGCACAGCTCCGGGTGCCCAGACAGGGGGCCATGCCGTGCCGGAGGGAGGAGGAAGAGGAAGCCGGCGAGGAGGCGGAGGGGGAGGAAGAGGAGGAGGACAGCTTCCTCCTACTGCAGCAGTCAGTGGCGCTGGGCAGCTCGGGCGAGGTGGACCGGCTGGTGGCCCAGATCGGCGAGACGCTGCAGCTGGACGCGGCGCAGCACAGCCCGGCCTCGCCGTGCGGGCCCCCGGGGGCGCCGCTGCGGGCCCCGGGGCCCCTGGCTGCGGCGGTGCCGGCGGACAAGGCCAGGTCCCCGGCGGTGCCGCTGCTGCTGCCGCCCGCGTTGGCGGAGACTGTGGGCCCGGCGCCCCCTGGGGTCCTGCGCTGCGCCCTGGGGGACCGCGGCCGCGTGCGGGGCCGCGCTGCGCCCTACTGCGTGGCCGAGCTCGCCACAGGCCCCAGCGCGCTGTCCCCACTGCCCCCTCAGGCCGACCTTGATGGGCCTCCGGGAGCTGGCAAGCAGGGCATCCCGCAGCCGCTGTCGGGTCCGTGCCGGCGAGGATGGCTCCGGGGCGCCGCCGCCTCCCGCCGCCTGCAGCAGCGACGCGGGTCCCAACCAGAAACCCGCACAGGCGACGACGACCCGCACCGGCTTCTGCAGCAGCTAGTGCTCTCTGGAAACCTCATCAAGGAGGCCGTGCGAAGGCTTCATTCGCGACGGCTGCAGTTACGTGCAAAGCTTCCCCAACGCCCGCTCCTGGGACCTCTGTCGGCCCCGGTGCATGAACCCCCTTCGCCTCGCAGCCCTCGCGCGGCCTGCAGTGACCCTGGCGCCTCCGGGAGGGCGCAGCTCAGAACTGGCGACGGCGTTCTTGTGCCTGGCAGCTAACACGCCCGGGGTGGCCACAGCGCCAGCCTCAGACTGGAGGGCAAGGGGTTCCCTTGAGGGCTGCAGTTCTACTCAGGCTGGTGGAGAACTCTGGCTTTTGGAAGCGAGAGTAAAAAGCTAATGACGAGGAACCGAAAAATCGCGAGTGTTTCGCGGGTAACTGGGGTTGAGGGCCAAAATATTTGGAATGAAGGACTTTGGCCCTATTTAAGGCAGATTTTACAGAGCGCACCTCAAACGTACAAGTCAGTAGGACTCCTTATTTGGCGTGACCCGACCTGGCCGCGGAGCCTGCATTTCCTCGCAGCCTCTCAGTGCCCTCCAGCCCCGCGACCATGTGGCCACAATCCACGCTTCTCCGGATCGCGGTGCGCCGGAACCACGGAGGATGATGCCAGTTACTTGCTTTACCTTTTCAGGGCTGGCTCCTGATCCACTTTGGGGGAGGAGAACATGAGTAGATAATTTCAGGGTGCAGCCCAATCTGCCAGACTTAAAAAAACCATCTTGTGTCTTTGGAGGTGCTGCTTAATACCAAACATGCGGTGCCATGAAGGGACCCTTTGGGGGTTGAATAGGAGTTAACCCCTGCGCTCTCTTTGCAACTGTCTCTCTTCTCAGAGTGGTGGGGGAAGGCTGTACGACACGGGTGGGGAAAGGAGGTGGGGGCGGGGAGTATTGAATGGTGGTGGAAGGGTAGAGAGGCGCGGAGTGAACCCCACGCCCTGTCTAAAGTGTATTTTCAGAGCCGGCCCGCCTCTCCTCGGTTCAAGGTCACTGTTTCCTGGGCACGCACTGGGTTGCGGGACAGAGTAGCCAGGTTCTGCCGGTGCTCGGAGAAGAGCGCAGTGTTTTGCAAGTGCTGGAGTCTCCTGAGGACACGCGCGTCGCCGCCACCGCGGGTGTGGGAAAGCGCGGACGTGCTGGGCGGCTGTGCTTCGGTAGGCGACCACCGCCCCTGGCCGCGCTCCGGGCTTTCACGGAAACTCCCGAGACCGGGCCCTGGGTTCCTCCTCTCCTACTCGGCTCTGCAGTCCTACTCAAGCGGGTGGCTCTGGGATCCTGGGGGCCTGGGTTGGGGGCTAGGGAGACGCCATGTGATGGACACTCCAGGGACACACAGCCTAGCACAGCAGCTTATAATGGGCTCTCCGGGGCCATTTGCAATAACAGCTGCAATTCCCTGGATAGACGAGTTGATTTCCTCCCTCTGCCCCTCCCCCAGCCATGCCAGCTGGCCTTTGTAAGTGCAGGAAACCGAGTAGAAAATGTGACCCTCCAAATGGAGAAGCTGCAGGCTTTGCCATTGTGAACCATGGTGAAGTGCTTGGAACATACTGTTCACTCACTCTAAAGGCGCTGAGACTGTGCTGTTGTTCTCGTTTTTATAGTCAATGGCTTGTTCATCATCCAGATGTGGCTACTGACATATCTACACTTCGCACCGGAGTGTCTGGAATTGTGGCTATCCTGATTATAGGATTTTAACTTAACTGAAATGCCTGCTTTGAATAAATGTGTTGGGTTTTTTGTTTGGTTTTATTTTATACTTGCCATCAGTGAAAAAGATGTACAGAACACATTTCTCTGATCTCCATAAACATGAAAACACTTGAAATCTC
+/geneInfo:
+{'Start': 97319267, 'End': 97321915, 'Length': 2649, 'Chromo': '10'}
+/geneCalc:
+{'Length': '2649', 'PercA': 18.0, 'PerC': 30.2, 'PercG': 32.0, 'PercT': 19.7}
+/geneList:
+[{'biotype': 'transcribed_unprocessed_pseudogene', 'source': 'havana', 'description': 'DEAD/H-box helicase 11 like 1 [Source:HGNC Symbol;Acc:HGNC:37102]', 'gene_id': 'ENSG00000223972', 'external_name': 'DDX11L1', 'start': 11869, 'logic_name': 'havana', 'id': 'ENSG00000223972', 'end': 14409, 'feature_type': 'gene', 'version': 5, 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'strand': 1}, {'strand': -1, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'feature_type': 'gene', 'version': 5, 'end': 29570, 'logic_name': 'havana', 'id': 'ENSG00000227232', 'gene_id': 'ENSG00000227232', 'external_name': 'WASH7P', 'start': 14404, 'description': 'WAS protein family homolog 7, pseudogene [Source:HGNC Symbol;Acc:HGNC:38034]', 'source': 'havana', 'biotype': 'unprocessed_pseudogene'}, {'strand': -1, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'feature_type': 'gene', 'version': 1, 'end': 17436, 'id': 'ENSG00000278267', 'logic_name': 'ncrna', 'external_name': 'MIR6859-1', 'gene_id': 'ENSG00000278267', 'start': 17369, 'description': 'microRNA 6859-1 [Source:HGNC Symbol;Acc:HGNC:50039]', 'source': 'mirbase', 'biotype': 'miRNA'}, {'end': 31109, 'feature_type': 'gene', 'version': 5, 'id': 'ENSG00000243485', 'logic_name': 'havana', 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': 1, 'description': 'MIR1302-2 host gene [Source:HGNC Symbol;Acc:HGNC:52482]', 'biotype': 'lincRNA', 'source': 'havana', 'external_name': 'MIR1302-2HG', 'start': 29554, 'gene_id': 'ENSG00000243485'}, {'feature_type': 'transcript', 'version': 2, 'Parent': 'ENSG00000223972', 'assembly_name': 'GRCh38', 'tag': 'basic', 'description': None, 'transcript_support_level': '1', 'transcript_id': 'ENST00000456328', 'start': 11869, 'external_name': 'DDX11L1-202', 'end': 14409, 'logic_name': 'havana', 'id': 'ENST00000456328', 'strand': 1, 'seq_region_name': '1', 'source': 'havana', 'biotype': 'processed_transcript'}, {'transcript_support_level': 'NA', 'tag': 'basic', 'description': None, 'start': 12010, 'external_name': 'DDX11L1-201', 'transcript_id': 'ENST00000450305', 'Parent': 'ENSG00000223972', 'feature_type': 'transcript', 'version': 2, 'assembly_name': 'GRCh38', 'source': 'havana', 'biotype': 'transcribed_unprocessed_pseudogene', 'logic_name': 'havana', 'id': 'ENST00000450305', 'end': 13670, 'strand': 1, 'seq_region_name': '1'}, {'biotype': 'unprocessed_pseudogene', 'source': 'havana', 'seq_region_name': '1', 'strand': -1, 'end': 29570, 'id': 'ENST00000488147', 'logic_name': 'havana', 'transcript_id': 'ENST00000488147', 'start': 14404, 'external_name': 'WASH7P-201', 'description': None, 'tag': 'basic', 'transcript_support_level': 'NA', 'assembly_name': 'GRCh38', 'feature_type': 'transcript', 'version': 1, 'Parent': 'ENSG00000227232'}, {'source': 'mirbase', 'biotype': 'miRNA', 'end': 17436, 'logic_name': 'ncrna', 'id': 'ENST00000619216', 'strand': -1, 'seq_region_name': '1', 'tag': 'basic', 'description': None, 'transcript_support_level': 'NA', 'transcript_id': 'ENST00000619216', 'start': 17369, 'external_name': 'MIR6859-1-201', 'version': 1, 'feature_type': 'transcript', 'Parent': 'ENSG00000278267', 'assembly_name': 'GRCh38'}, {'description': None, 'tag': 'basic', 'transcript_support_level': '5', 'transcript_id': 'ENST00000473358', 'external_name': 'MIR1302-2HG-202', 'start': 29554, 'version': 1, 'feature_type': 'transcript', 'Parent': 'ENSG00000243485', 'assembly_name': 'GRCh38', 'biotype': 'lincRNA', 'source': 'havana', 'end': 31097, 'logic_name': 'havana', 'id': 'ENST00000473358', 'seq_region_name': '1', 'strand': 1}, {'constitutive': 0, 'start': 11869, 'ensembl_phase': -1, 'ensembl_end_phase': -1, 'source': 'havana', 'exon_id': 'ENSE00002234944', 'strand': 1, 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'id': 'ENSE00002234944', 'Parent': 'ENST00000456328', 'feature_type': 'exon', 'rank': 1, 'version': 1, 'end': 12227}, {'Parent': 'ENST00000456328', 'id': 'ENSE00003582793', 'end': 12721, 'version': 1, 'feature_type': 'exon', 'rank': 2, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': 1, 'source': 'havana', 'exon_id': 'ENSE00003582793', 'start': 12613, 'constitutive': 0, 'ensembl_phase': -1, 'ensembl_end_phase': -1}, {'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': 1, 'end': 14409, 'feature_type': 'exon', 'version': 1, 'rank': 3, 'Parent': 'ENST00000456328', 'id': 'ENSE00002312635', 'ensembl_end_phase': -1, 'ensembl_phase': -1, 'start': 13221, 'constitutive': 0, 'exon_id': 'ENSE00002312635', 'source': 'havana'}, {'ensembl_phase': -1, 'ensembl_end_phase': -1, 'constitutive': 0, 'start': 12010, 'exon_id': 'ENSE00001948541', 'source': 'havana', 'strand': 1, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'feature_type': 'exon', 'rank': 1, 'version': 1, 'end': 12057, 'id': 'ENSE00001948541', 'Parent': 'ENST00000450305'}, {'end': 12227, 'feature_type': 'exon', 'version': 2, 'rank': 2, 'Parent': 'ENST00000450305', 'id': 'ENSE00001671638', 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'strand': 1, 'exon_id': 'ENSE00001671638', 'source': 'havana', 'ensembl_phase': -1, 'ensembl_end_phase': -1, 'start': 12179, 'constitutive': 0}, {'ensembl_end_phase': -1, 'ensembl_phase': -1, 'start': 12613, 'constitutive': 0, 'exon_id': 'ENSE00001758273', 'source': 'havana', 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'strand': 1, 'end': 12697, 'rank': 3, 'feature_type': 'exon', 'version': 2, 'Parent': 'ENST00000450305', 'id': 'ENSE00001758273'}, {'id': 'ENSE00001799933', 'Parent': 'ENST00000450305', 'feature_type': 'exon', 'rank': 4, 'version': 2, 'end': 13052, 'strand': 1, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'source': 'havana', 'exon_id': 'ENSE00001799933', 'constitutive': 0, 'start': 12975, 'ensembl_phase': -1, 'ensembl_end_phase': -1}, {'Parent': 'ENST00000450305', 'id': 'ENSE00001746346', 'end': 13374, 'version': 2, 'feature_type': 'exon', 'rank': 5, 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'strand': 1, 'source': 'havana', 'exon_id': 'ENSE00001746346', 'start': 13221, 'constitutive': 0, 'ensembl_end_phase': -1, 'ensembl_phase': -1}, {'start': 13453, 'constitutive': 0, 'ensembl_end_phase': -1, 'ensembl_phase': -1, 'source': 'havana', 'exon_id': 'ENSE00001863096', 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'strand': 1, 'Parent': 'ENST00000450305', 'id': 'ENSE00001863096', 'end': 13670, 'feature_type': 'exon', 'version': 1, 'rank': 6}, {'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': -1, 'Parent': 'ENST00000488147', 'id': 'ENSE00001890219', 'end': 29570, 'version': 1, 'feature_type': 'exon', 'rank': 1, 'start': 29534, 'constitutive': 1, 'ensembl_end_phase': -1, 'ensembl_phase': -1, 'source': 'havana', 'exon_id': 'ENSE00001890219'}, {'strand': -1, 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'version': 1, 'feature_type': 'exon', 'rank': 2, 'end': 24891, 'id': 'ENSE00003507205', 'Parent': 'ENST00000488147', 'ensembl_phase': -1, 'ensembl_end_phase': -1, 'constitutive': 1, 'start': 24738, 'exon_id': 'ENSE00003507205', 'source': 'havana'}, {'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': -1, 'end': 18366, 'feature_type': 'exon', 'version': 1, 'rank': 3, 'Parent': 'ENST00000488147', 'id': 'ENSE00003477500', 'ensembl_end_phase': -1, 'ensembl_phase': -1, 'start': 18268, 'constitutive': 1, 'exon_id': 'ENSE00003477500', 'source': 'havana'}, {'ensembl_end_phase': -1, 'ensembl_phase': -1, 'start': 17915, 'constitutive': 1, 'exon_id': 'ENSE00003565697', 'source': 'havana', 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'strand': -1, 'end': 18061, 'feature_type': 'exon', 'rank': 4, 'version': 1, 'Parent': 'ENST00000488147', 'id': 'ENSE00003565697'}, {'source': 'havana', 'exon_id': 'ENSE00003475637', 'constitutive': 1, 'start': 17606, 'ensembl_phase': -1, 'ensembl_end_phase': -1, 'id': 'ENSE00003475637', 'Parent': 'ENST00000488147', 'feature_type': 'exon', 'version': 1, 'rank': 5, 'end': 17742, 'strand': -1, 'seq_region_name': '1', 'assembly_name': 'GRCh38'}, {'ensembl_end_phase': -1, 'ensembl_phase': -1, 'constitutive': 1, 'start': 17233, 'exon_id': 'ENSE00003502542', 'source': 'havana', 'strand': -1, 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'rank': 6, 'feature_type': 'exon', 'version': 1, 'end': 17368, 'id': 'ENSE00003502542', 'Parent': 'ENST00000488147'}, {'Parent': 'ENST00000488147', 'id': 'ENSE00003553898', 'end': 17055, 'feature_type': 'exon', 'rank': 7, 'version': 1, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': -1, 'source': 'havana', 'exon_id': 'ENSE00003553898', 'start': 16858, 'constitutive': 1, 'ensembl_end_phase': -1, 'ensembl_phase': -1}, {'ensembl_end_phase': -1, 'ensembl_phase': -1, 'constitutive': 1, 'start': 16607, 'exon_id': 'ENSE00003621279', 'source': 'havana', 'strand': -1, 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'feature_type': 'exon', 'version': 1, 'rank': 8, 'end': 16765, 'id': 'ENSE00003621279', 'Parent': 'ENST00000488147'}, {'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': -1, 'Parent': 'ENST00000488147', 'id': 'ENSE00002030414', 'end': 15947, 'feature_type': 'exon', 'version': 1, 'rank': 9, 'start': 15796, 'constitutive': 1, 'ensembl_end_phase': -1, 'ensembl_phase': -1, 'source': 'havana', 'exon_id': 'ENSE00002030414'}, {'exon_id': 'ENSE00001935574', 'source': 'havana', 'ensembl_end_phase': -1, 'ensembl_phase': -1, 'start': 15005, 'constitutive': 1, 'end': 15038, 'version': 1, 'feature_type': 'exon', 'rank': 10, 'Parent': 'ENST00000488147', 'id': 'ENSE00001935574', 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': -1}, {'ensembl_end_phase': -1, 'ensembl_phase': -1, 'start': 14404, 'constitutive': 1, 'exon_id': 'ENSE00001843071', 'source': 'havana', 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': -1, 'end': 14501, 'feature_type': 'exon', 'version': 1, 'rank': 11, 'Parent': 'ENST00000488147', 'id': 'ENSE00001843071'}, {'feature_type': 'exon', 'rank': 1, 'version': 1, 'end': 17436, 'id': 'ENSE00003746039', 'Parent': 'ENST00000619216', 'strand': -1, 'assembly_name': 'GRCh38', 'seq_region_name': '1', 'exon_id': 'ENSE00003746039', 'source': 'mirbase', 'ensembl_phase': -1, 'ensembl_end_phase': -1, 'constitutive': 1, 'start': 17369}, {'ensembl_phase': -1, 'ensembl_end_phase': -1, 'start': 29554, 'constitutive': 0, 'exon_id': 'ENSE00001947070', 'source': 'havana', 'seq_region_name': '1', 'assembly_name': 'GRCh38', 'strand': 1, 'end': 30039, 'feature_type': 'exon', 'version': 1, 'rank': 1, 'Parent': 'ENST00000473358', 'id': 'ENSE00001947070'}]
+
